@@ -1,0 +1,45 @@
+/* This is a comment */
+body {
+    background-color: rgb(50, 50, 133);
+    /* This is another comment */
+}
+
+/* center body*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title,
+.timer {
+    display: block;
+}
+
+.title,
+.timer {
+    text-align: center;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    font-weight: 100 !important;
+}
