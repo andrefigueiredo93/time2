@@ -43,3 +43,82 @@ p {
 body {
     font-weight: 100 !important;
 }
+
+.comment {
+    text-align: left;
+    margin-left: 25%;
+}
+
+.btn {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 100 !important;
+    background-color: salmon;
+    margin-top: 10px;
+
+    opacity: 0.5;
+    border: none;
+
+    position: static;
+    right: 0;
+    top: 0;
+
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+
+.input {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 200 !important;
+    background-color: rgb(50, 50, 133);
+
+    opacity: 0.5;
+    margin-top: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+
+    outline: none;
+    width: 75%;
+}
+
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Estilo do botão de fechar */
+#closeModal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#closeModal:hover,
+#closeModal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
