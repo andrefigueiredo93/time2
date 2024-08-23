@@ -19,7 +19,7 @@ db.collection("comments").get().then((querySnapshot) => {
 });
 
 function addComment(message) {
-    var newParagraph = document.createElement("p");
+    var newParagraph = document.createElement("li");
     newParagraph.textContent = message;
     var commentElement = document.querySelector('.comment');
     commentElement.appendChild(newParagraph);
