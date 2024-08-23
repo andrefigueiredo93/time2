@@ -1,6 +1,6 @@
 /* This is a comment */
 body {
-    background-color: rgb(50, 50, 133);
+    background-color: rgb(106, 106, 153);
     /* This is another comment */
 }
 
@@ -30,19 +30,23 @@ body {
 
 body {
     font-family: 'Noto Sans', sans-serif;
+    font-weight: 400 !important;
+
 }
 
 h1 {
     font-family: 'Quicksand', sans-serif;
+    font-weight: 400 !important;
+
 }
 
 p {
     font-family: 'Roboto Mono', monospace;
+    font-weight: 400 !important;
+
 }
 
-body {
-    font-weight: 100 !important;
-}
+
 
 .comment {
     text-align: left;
@@ -72,7 +76,7 @@ body {
 .input {
     font-family: 'Noto Sans', sans-serif;
     font-weight: 200 !important;
-    background-color: rgb(50, 50, 133);
+    background-color: rgb(106, 106, 153);
 
     opacity: 0.5;
     margin-top: 10px;
