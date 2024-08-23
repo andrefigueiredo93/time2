@@ -13,7 +13,7 @@ var diff_temp = calculeDays(today, tempDate);
 var daysElement = document.getElementById('timer');
 
 setElementText('timer', 'Faltam ' + diff_final + " dias para eu voltar");
-setElementText('timer2', 'Faltam ' + diff_temp + " para te ir ai dar um kissssss");
+setElementText('timer2', 'Faltam ' + diff_temp + " para ir ai dar-te um kissssss");
 
 function calculeDays(today, futureDate) {
     return Math.ceil((futureDate - today) / (1000 * 60 * 60 * 24));
