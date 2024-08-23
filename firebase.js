@@ -67,6 +67,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Quando o usuário clica em <span> (x), fecha o modal
     span.onclick = function () {
         modal.style.display = "none";
+        location.reload(); // Adicione esta linha
+
     }
     // Quando o usuário clica em qualquer lugar fora do modal, fecha o modal
     window.onclick = function (event) {
