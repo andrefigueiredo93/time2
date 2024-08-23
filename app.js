@@ -1,17 +1,25 @@
 // Get today's date
-let today = new Date();
+var today = new Date();
 
 // Get the date for March 1, 2024
-let futureDate = new Date(2024, 2, 1); // Note: JavaScript counts months from 0 (January) to 11 (December)
+var finalDate = new Date(2025, 2, 1); // Note: JavaScript counts months from 0 (January) to 11 (December)
+var tempDate = new Date(2024, 9, 20); // Note: JavaScript counts months from 0 (January) to 11 (December)
 
 // Calculate the difference in milliseconds
-let diff = futureDate - today;
-
-// Convert milliseconds to days
-let days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+var diff_final = calculeDays(today, finalDate);
+var diff_temp = calculeDays(today, tempDate);
 
 // Get the element with id "timer"
-let daysElement = document.getElementById('timer');
+var daysElement = document.getElementById('timer');
 
-// Set the text of the "timer" element to the number of days
-daysElement.innerText = 'Faltam ' + (days * -1) + " dias para eu voltar";
+setElementText('timer', 'Faltam ' + diff_final + " dias para eu voltar");
+setElementText('timer2', 'Faltam ' + diff_temp + " para te ir ai dar um kissssss");
+
+function calculeDays(today, futureDate) {
+    return Math.ceil((futureDate - today) / (1000 * 60 * 60 * 24));
+}
+
+function setElementText(id, text) {
+    var element = document.getElementById(id);
+    element.innerText = text;
+}
