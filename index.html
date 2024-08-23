@@ -2,6 +2,16 @@
 <html>
 
 <head>
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <!-- Your other scripts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,10 +23,6 @@
 
 
 <div class="container">
-    <!-- div with title -->
-
-
-    <!-- div with timer -->
     <div class="timer">
         <h1 id="timer">10 Dias</h1>
     </div>
@@ -24,8 +30,16 @@
     <div class="timer">
         <h1 id="timer2">10 Dias</h1>
     </div>
-    <script src="app.js"></script>
 
+    <div class="comments timer">
+        <h2>Comentários</h2>
+        <div class="comments-list">
+            <div class="comment">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="firebase.js"></script>
 </div>
 
 </html>
