@@ -3,7 +3,7 @@ var today = new Date();
 
 // Get the date for March 1, 2024
 var finalDate = new Date(2025, 2, 1); // Note: JavaScript counts months from 0 (January) to 11 (December)
-var tempDate = new Date(2024, 9, 20); // Note: JavaScript counts months from 0 (January) to 11 (December)
+var tempDate = new Date(2024, 8, 20); // Note: JavaScript counts months from 0 (January) to 11 (December)
 
 // Calculate the difference in milliseconds
 var diff_final = calculeDays(today, finalDate);
